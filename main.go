@@ -16,7 +16,7 @@ func main() {
 		fmt.Printf("Inspecting ObjectID \"%s\"\n", in)
 		fmt.Printf("\tTime: %s\n", o.Time())
 		fmt.Printf("\tPid: %d\n", o.Pid())
-		m, _ := binary.Varint(o.Machine())
+		m, _ := binary.Uvarint(o.Machine())
 		fmt.Printf("\tMachine: %d\n", m)
 		fmt.Printf("\tCounter: %d\n", o.Counter())
 	} else {
