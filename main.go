@@ -23,5 +23,5 @@ func main() {
 	} else {
 		fmt.Printf("\"%s\" is not a valid BSON ObjectID\n", in)
 	}
-	fmt.Println("done")
+	fmt.Printf("%v done")
 }
