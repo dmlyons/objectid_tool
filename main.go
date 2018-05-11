@@ -11,6 +11,7 @@ import (
 func main() {
 	flag.Parse()
 	in := flag.Arg(0)
+
 	if bson.IsObjectIdHex(in) {
 		o := bson.ObjectIdHex(in)
 		fmt.Printf("Inspecting ObjectID \"%s\"\n", in)
@@ -22,5 +23,5 @@ func main() {
 	} else {
 		fmt.Printf("\"%s\" is not a valid BSON ObjectID\n", in)
 	}
-	fmt.Println()
+	fmt.Printf("%v done")
 }
